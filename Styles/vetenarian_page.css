@@ -1,0 +1,118 @@
+@font-face{
+    font-family: "Playfair Display";
+    src: url(../Fonts/PlayfairDisplay-VariableFont_wght.ttf);
+}
+
+*{
+    font-family: "Playfair Display", "Georgia";
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgba(245, 247, 251, 1);
+}
+.nav_bar{
+    background-color: rgba(78, 76, 134, 1);
+    width: 13vw;
+    height: 100vh;
+    padding-left: 2.1vw;
+    padding-right: 2vw;
+    padding-top: 7vh;
+    position: fixed;
+}
+.nav_bar img{
+    width: 3.45vw;
+}
+.nav_bar .overview{
+    margin-top: 5.1vh;
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+.nav_bar .heading{
+    font-size: 0.9vw;
+    color: white;
+    opacity: 50%;
+}
+.nav_bar .overview .overview_list{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+    font-size: 1.03vw;
+}
+.nav_bar .overview .overview_list span{
+    display: flex;
+    flex-direction: row;
+    gap: 0.3vw;
+    justify-items: center;
+}
+.nav_bar .overview .overview_list span img{
+    width: 1.1vw;
+}
+.nav_bar .overview .overview_list span #arrow{
+    width: 1.3vw;
+}
+.case_studies{
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    margin-top: 5vh;
+}
+.case_studies .case_studies_list{
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+}
+.case_studies .case_studies_list img{
+    width: 2.8vw;
+}
+.case_studies .case_studies_list .pet_mini_profile{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5vw;
+    justify-items: center;
+}
+.case_studies .case_studies_list .pet_mini_profile .name_and_species{
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+.case_studies .case_studies_list .pet_mini_profile .name_and_species .name{
+    font-size: 1.03vw;
+}
+.case_studies .case_studies_list .pet_mini_profile .name_and_species .species{
+    font-size: 0.95vw;
+    opacity: 50%;
+}
+.nav_bar #log_out{
+    color: white;
+    font-size: 1.03vw;
+    display: flex;
+    flex-direction: row;
+    gap: 0.3vw;
+    justify-items: center;
+    margin-top: 9vh;
+}
+.nav_bar #log_out img{
+    width: 1.3vw;
+}
+
+.scrolling_ticker{
+    color: white;
+    background-color: rgba(135, 120, 164, 1);
+    text-align: center;
+    font-size: 1.03vw;
+    padding-top: 0.7vh;
+    padding-bottom: 0.7vh;
+}
+
+.salute_and_side_profile{
+    margin-left: 22vw;
+}
+.salute_and_side_profile .salute{
+    font-size: 2.8vw;
+}
+.salute_and_side_profile .salute #doctors_name{
+    color: rgba(150, 176, 77, 1);
+}
