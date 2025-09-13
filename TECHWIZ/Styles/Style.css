@@ -1,0 +1,466 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: "Playfair Display", serif;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 56px;
+    color: #222;
+}
+
+h2 {
+    font-size: 50px;
+    line-height: 1.1;
+    color: rgba(78, 76, 134, 1);
+}
+
+h4{
+    font-size: 20px;
+    color: #222;
+}
+
+h6 {
+    font-weight: 700;
+    font-size: 12px;
+}
+
+p {
+    font-size: 22px;
+    color: black;
+    margin: 10px 0 20px 0;
+    line-height: 1.4;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-image: linear-gradient(to right, white 15%, rgba(78, 76, 134, 1) 85%);
+    box-shadow: 0 5px 15px, rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#header img {
+    width: 200px;
+    height: auto;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a {
+    color: white;
+    font-weight: 800;
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover {
+    color: rgba(150, 176, 77, 1);
+}
+
+#hero {
+    background-image: url(../Assets/Image/Hero/dog.jpg);
+    background-color: #e3e6f3;
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#hero h2 {
+    color: rgba(78, 76, 134, 1);
+    font-size: 60px;
+    margin-top: 40px;
+}
+
+#hero p {
+    color: black;
+}
+
+#hero button {
+    background-image: url("../Assets/Image/Hero/paw1.png");
+    background-color: transparent;
+    color: #e3e6f3;
+    font-weight: 700;
+    font-size: 18px;
+    border: 0;
+    padding: 75px 40px 35px 44px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    background-size: contain;
+    margin-left: 15px;
+
+}#adopt {
+    text-align: center;
+    padding-top: 60px;
+    background-color: rgb(236, 234, 234);
+}
+
+#adopt .adoption {
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: 0.2 ease;
+    background-color: #e3e6f3;
+}
+
+#adopt .adoption:hover {
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+
+#adopt .adoption img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+#adopt .adopt-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#adopt .adoption .des {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin: 12px 12px;
+}
+
+#adopt .adoption .des .des-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: rgba(78, 76, 134, 1);
+}
+
+#adopt button {
+    margin-top: 50px;
+    background-color: rgba(78, 76, 134, 1);
+    border: 1px solid white;
+    font-size: 24px;
+    color: white;
+    font-weight: 600;
+    padding: 12px 30px;
+    border-radius: 50px;
+    transition: all ease .5s;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+
+#adopt button:hover {
+    background-color: rgb(72, 70, 120);
+    transform: scale(1.05);
+}
+
+#event {
+    text-align: center;
+    padding-top: 60px;
+    background-color: #dedddd;
+    padding-bottom: 50px;
+}
+
+#event h2 {
+    color: rgba(78, 76, 134, 1);
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+#event .event-container {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin: 12px 12px;
+}
+
+#event .event-blog {
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: 0.2 ease;
+    background-color: rgb(236, 234, 234);
+}
+
+#event .event-blog img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+#event .event-container .event-des {
+    text-align: start;
+    margin-bottom: 20px;
+}
+
+#event .event-container .event-des .event-name {
+    display: block;
+    line-height: 1.7;
+    color: rgba(78, 76, 134, 1);
+    font-weight: bold;
+}
+
+#event .event-container .event-des .event-date {
+    display: block;
+    line-height: 1.7;
+}
+
+#event .event-container .event-des .event-loc {
+    display: block;
+    line-height: 1.7;
+}
+
+#event .event-container .event-des .event-note {
+    display: block;
+    line-height: 1.4;
+}
+
+#event .event-container .event-blog button {
+    margin-top: 15px;
+    background-color: rgba(78, 76, 134, 1);
+    border: 0.5px solid white;
+    font-size: 15px;
+    color: white;
+    font-weight: 600;
+    padding: 11px 28px;
+    border-radius: 50px;
+    transition: all ease .5s;
+    cursor: pointer;
+}
+
+#event .event-join {
+    border: 1px solid #cce7d0;
+    border-radius: 10px;
+    border-width: 50%;
+    width: 50%;
+    min-width: 250px;
+    padding: 10px 12px;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    display: inline-block;
+    justify-content: center;
+    margin-top: 50px;
+    background-color: rgb(236, 234, 234);
+}
+
+
+#event .event-join p {
+    line-height: 1;
+}
+
+#event .event-join button {
+    margin-top: 15px;
+    background-color: rgba(78, 76, 134, 1);
+    border: 0.5px solid white;
+    font-size: 15px;
+    color: white;
+    font-weight: 600;
+    padding: 11px 28px;
+    border-radius: 50px;
+    transition: all ease .5s;
+    cursor: pointer;
+}
+
+#don {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+}
+
+.don-head, .donate {
+    flex: 1;
+    padding: 40px;
+    box-sizing: border-box;
+    color: white ;
+}
+
+.don-head {
+    background-color: rgba(78, 76, 134, 1);
+    color: white;
+    padding-top: 130px;
+}
+
+.don-head h2 {
+    color: white;
+}
+
+.don-head h3 {
+    font-size: 35px;
+    margin-bottom: 28px;
+}
+
+.don-head p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: white;
+}
+
+.don-head button {
+    margin-top: 15px;
+    background-color: rgba(78, 76, 134, 1);
+    border: 0.5px solid white;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    padding: 11px 28px;
+    border-radius: 50px;
+    transition: all ease .5s;
+    cursor: pointer;
+}
+
+.don-head button:hover {
+    background-color: white;
+    color: rgba(78, 76, 134, 1);
+    transform: scale(1.05);
+}
+
+.don-deets {
+    padding-top: 30px;
+}
+
+.donate {
+    background-color: white;
+    color: rgba(78, 76, 134, 1);
+}
+
+.donate h3 {
+    font-size: 35px;
+    display: block;
+    margin-top: 100px;
+    margin-bottom: 28px;
+    margin-left: 100px;
+}
+
+.donate p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #555;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    margin-left: 100px;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"], input[type="email"], input[type="phonenumber"] {
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 60%;
+    margin-left: 100px;
+}
+
+input[type="email"] {
+    margin-top: 18px;
+}
+
+label[for="phonenumber"] {
+    font-size: 12px;
+    color: #717070;
+    padding-left: 105px;
+    margin-bottom: 5px;
+}
+
+.donate button {
+    margin-top: 50px;
+    background-color: rgba(78, 76, 134, 1);
+    border: 1px solid white;
+    font-size: 24px;
+    color: white;
+    font-weight: 600;
+    padding: 12px 30px;
+    border-radius: 50px;
+    transition: all ease .5s;
+    cursor: pointer;
+}
+
+.donate button:hover {
+    transform: scale(1.05);
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 20px;
+  margin-bottom: 50px;
+  /* background-color: rgba(78,76 ,134 ,1 ); */
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+.Success{
+    flex-direction: column;
+    text-align: center;
+    color: rgba(78,76 ,134 ,1 );
+}
+
+.Success{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px;
+  width: 100%;
+  margin: auto;
+  gap: 40px;
+  background-color: rgba(245,247,251,1);
+}
+
+.Success {
+  flex: 1;
+}
+
+.Success h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color:rgba(78,76 ,134 ,1 );
+}
