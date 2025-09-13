@@ -18,15 +18,17 @@ document.getElementById("userForm").addEventListener("submit", function(event) {
       }
     });
 
-
+    //This navigates you to the dashboard
   document.getElementById("petForm").addEventListener("submit", function(e) {
     e.preventDefault(); // Stop default form submission
     
     if (this.checkValidity()) {
       // ✅ If form is valid, go to another page
-      window.location.href = "nextPage.html";
+      window.location.href = "dashboard.html";
     } else {
       // ❌ If form is invalid, show browser’s validation
       this.reportValidity();
     }
   });
+
+  //This navigates you to the vet page
