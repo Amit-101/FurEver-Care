@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../Styles/vetenarian_page.css"/>
+    <link rel="stylesheet" href="../Styles/dashboard.css">
     <!-- <link rel="icon" href="../Images/ForEverCareLogoSmall.svg"/> -->
      <link rel="icon" href="../Images/FEC.svg"/>
     <title>Veterinarian Page</title>
@@ -16,10 +17,10 @@
             <span class="heading">OVERVIEW</span>
 
             <div class="overview_list">
-                <span><img src="../Images/material-symbols_health-cross-outline-rounded.svg"> Appointments</span>
-                <span><img src="../Images/material-symbols_history-edu-outline.svg">Pet History</span>
-                <span><img src="../Images/tabler_message.svg" id="arrow">Give feedback</span>
-                <span><img src="../Images/f7_arrow-up-right.svg" id="arrow">Contact Us</span>
+                <a href="#Appointments"><span><img src="../Images/material-symbols_health-cross-outline-rounded.svg"> Appointments</span></a>
+                <a href="#Pet_History"><span><img src="../Images/material-symbols_history-edu-outline.svg">Pet History</span></a>
+                <a href="#Give_Feedback"><span><img src="../Images/tabler_message.svg" id="arrow">Give Feedback</span></a>
+                <a href="#Contact_Us"><span><img src="../Images/f7_arrow-up-right.svg" id="arrow">Contact & About</span></a>
             </div>
 
         </div>
@@ -66,8 +67,8 @@
     </div>
 
     <div class="salute">
-            <span class="greeting">Hey there, </span>
-            <span id="doctors_name">Gina</span>
+            <span class="greeting">Hey </span>
+            <span id="doctors_name">Gina!</span>
     </div>
 
     <div class="side_profile">
@@ -97,9 +98,65 @@
 
 
 
-<p class="pointments">Appointments</p>
+<p class="sub_heading" id="Appointments">Appointments</p>
 
-<div class="mid-container"></div>    
+<img src="../Images/Appointments.svg" class="appointments">
+<span id="Pet_History"></span>
+<p class="sub_heading">Case Studies</p>
+<div class="case_studies_two">
+    <img src="../Images/Frame 37.svg"/>
+    <img src="../Images/Frame 38.svg" />
+    <img src="../Images/Frame 39.svg"/>
+</div>
 
+<span id="Give_Feedback"></span>
+<p class="sub_heading">Tell us what you think</p>
+
+<section class="feedback-section">
+            <div class="feedback-card">
+                <form>
+                <input type="text" placeholder="What's your name?" required>
+                <input type="email" placeholder="Your email" required>
+                <textarea placeholder="Feedback" rows="5" required></textarea>
+                <button type="submit">Submit</button>
+                </form>
+            </div>
+            </section>
+
+
+            <div class="containerCircle">
+                               
+                <!-- About Us Circle -->
+                 <span id="Contact_Us"></span> 
+                <div class="circle">
+                <h2>About Us</h2>
+                <span id="Contact_Us"></span>
+                <p>
+                    At FurEver Care, we believe pets are family. Our mission is to make caring 
+                    for your cats and dogs simple, joyful, and stress-free. From trusted feeding guides 
+                    to expert tips and quality care resources, we’re here to help you give your furry 
+                    friends the happy, healthy lives they deserve.
+                </p>
+                </div>
+
+
+                <!-- Contact Us Circle -->
+                    <div class="circle">
+                    <h2>Contact Us</h2>
+                    <div class="contact-options">
+                        <div><i class="fas fa-envelope"></i> Send us an email</div>
+                        <div><i class="fas fa-phone-alt"></i> Give us a call</div>
+                        <div><i class="fab fa-whatsapp"></i> Chat with us</div>
+                    </div>
+                    </div>
+
+                </div>
+
+                <br><br>
+                <footer>
+                        <div class="footer-container">
+                        <p>FurEver Care ©2025 All Rights Reserved</p>
+                        </div>
+                </footer>
 </body>
 </html>

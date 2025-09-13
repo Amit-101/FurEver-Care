@@ -8,14 +8,16 @@
     font-family: "Playfair Display", "Georgia";
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
+    text-decoration: none;
 }
 body{
     background-color: rgba(245, 247, 251, 1);
 }
 .nav_bar{
     background-color: rgba(78, 76, 134, 1);
-    width: 13vw;
-    height: 100vh;
+    width: 13.5vw;
+    height: 110vh;
     padding-left: 2.1vw;
     padding-right: 2vw;
     padding-top: 7vh;
@@ -49,6 +51,7 @@ body{
     flex-direction: row;
     gap: 0.3vw;
     align-items: center;
+    color: white;
 }
 .nav_bar .overview .overview_list span img{
     width: 1.1vw;
@@ -139,6 +142,7 @@ body{
     margin-top: -5vh;
     align-items: flex-end;
     width: fit-content;
+    z-index: 2;
 }
 .side_profile .mini_profile{
     display: flex;
@@ -208,7 +212,7 @@ body{
 .vet_profile a{
     text-decoration: none;
     color: white;
-    font-size: 1.5vw;
+    font-size: 1.2vw;
     outline: none;
     margin-top: 5vh;
     align-self: center;
@@ -220,14 +224,28 @@ body{
 
 
 
-.pointments {
+.sub_heading {
     padding: 498px;
     position: relative;
-    bottom: 450px;
+    /* bottom: 450px; */
+    margin-top: -75vh;
+    margin-bottom: -76vh;
     right: 225px;
-    font-weight: bold;
+    font-size: 1.9vw;
+    font-weight: 550;
 }
 
-.mid-container {
-    
+.appointments {
+    margin-left: 21vw;
+    width: 55vw;
+}
+
+.case_studies_two{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+.case_studies_two img{
+    margin-left: 21vw;
+    width: 55vw;
 }
