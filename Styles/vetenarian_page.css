@@ -225,12 +225,12 @@ body{
 
 
 .sub_heading {
-    padding: 498px;
+    padding: 39vw;
     position: relative;
     /* bottom: 450px; */
     margin-top: -75vh;
     margin-bottom: -76vh;
-    right: 225px;
+    right: 17.5vw;
     font-size: 1.9vw;
     font-weight: 550;
 }
