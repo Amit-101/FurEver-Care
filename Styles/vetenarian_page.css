@@ -203,3 +203,18 @@ body{
     align-items: center;
     background-color: rgba(78, 76, 134, 1);
 }
+
+
+
+
+.pointments {
+    padding: 498px;
+    position: relative;
+    bottom: 450px;
+    right: 225px;
+    font-weight: bold;
+}
+
+.mid-container {
+    
+}
