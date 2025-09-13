@@ -4,6 +4,7 @@
 }
 
 *{
+    scrollbar-width: none;
     font-family: "Playfair Display", "Georgia";
     margin: 0;
     padding: 0;
