@@ -1,0 +1,213 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f7fb;
+}
+
+/* Layout */
+.page-wrapper {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+/* Left Image */
+.form-left-panel {
+  flex: 1;
+  background: url("../Images/dog_and_cat 1.svg") no-repeat center center/cover;
+}
+
+/* Right Form */
+.form-right-panel {
+  flex: 1;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+.form-logo img {
+  width: 250px;
+  margin-bottom: 20px;
+}
+
+.form-title {
+  font-size: 35px;
+  margin-bottom: 5px;
+  font-family: "Playfair Display", serif;
+}
+
+.form-tagline {
+  font-size: 20px;
+  margin-bottom: 30px;
+  color: #333;
+  font-style: italic;
+}
+
+.form-instruction {
+  margin-bottom: 15px;
+  font-family: "Playfair Display", serif;
+}
+
+/* Form grid */
+.form-fields-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.form-fields-grid input[type="text"],
+.form-fields-grid input[type="tel"],
+.form-fields-grid input[type="email"],
+.form-fields-grid input[type="number"],
+.form-fields-grid input[type="file"] {
+  padding: 15px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  background: #f2f2f2;
+  font-size: 16px;
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form-fields-grid input:focus {
+  border-color: #6a5acd;
+  background: #fff;
+}
+
+/* Upload box */
+.form-upload-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  background: #f2f2f2;
+  font-size: 16px;
+  cursor: pointer;
+  color: #888;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form-upload-box:hover {
+  border-color: #6a5acd;
+  background: #fff;
+}
+
+.form-upload-box i {
+  font-size: 16px;
+  color: #666;
+}
+
+/* Submit button */
+.form-submit-btn {
+  width: 160px;
+  height: 50px;
+  background: #4e4c86;
+  color: white;
+  font-size: 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+  display: block;
+  margin: 0 auto;
+}
+
+.form-submit-btn:hover {
+  background: rgba(135, 120, 164, 1);
+}
+
+
+/* === RESPONSIVENESS === */
+
+/* Tablets (≤ 1024px) */
+@media (max-width: 1024px) {
+  .form-title {
+    font-size: 28px;
+  }
+  .form-tagline {
+    font-size: 18px;
+  }
+  .form-fields-grid {
+    max-width: 450px;
+    gap: 15px;
+  }
+  .form-logo img {
+    width: 200px;
+  }
+}
+
+/* Small Tablets & Large Phones (≤ 768px) */
+@media (max-width: 768px) {
+  .page-wrapper {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .form-left-panel {
+    height: 250px;
+    flex: none;
+    background-position: top center;
+  }
+
+  .form-right-panel {
+    flex: none;
+    padding: 30px 20px;
+    width: 100%;
+  }
+
+  .form-fields-grid {
+    grid-template-columns: 1fr; /* stack inputs */
+    max-width: 100%;
+  }
+
+  .form-title {
+    font-size: 26px;
+  }
+
+  .form-tagline {
+    font-size: 16px;
+  }
+}
+
+/* Phones (≤ 480px) */
+@media (max-width: 480px) {
+  .form-logo img {
+    width: 150px;
+  }
+
+  .form-title {
+    font-size: 22px;
+  }
+
+  .form-tagline {
+    font-size: 14px;
+  }
+
+  .form-submit-btn {
+    width: 100%;
+    font-size: 18px;
+  }
+
+  .form-fields-grid input,
+  .form-upload-box {
+    font-size: 14px;
+    padding: 12px;
+  }
+}

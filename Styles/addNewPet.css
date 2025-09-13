@@ -1,0 +1,366 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f7fb;
+}
+
+/* Layout */
+.wrapper {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+/* Left Image */
+.left-panel {
+  flex: 1;
+  background: url("../Images/dog_and_cat\ 1.svg") no-repeat center center/cover;
+}
+
+/* Right Form */
+.right-panel {
+  flex: 1;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand-logo img {
+  width: 250px;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 35px;
+  margin-bottom: 5px;
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.subtitle {
+  font-size: 20px;
+  margin-bottom: 30px;
+  color: #333;
+  font-style: italic;
+}
+
+/* Radio group */
+.choice-group {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 25px;
+}
+
+.choice-group label {
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.choice-group input[type="radio"] {
+  transform: scale(1.2);
+  margin-right: 6px;
+  accent-color: #96b04d;
+}
+
+/* Form grid */
+.field-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.field-grid input[type="text"],
+.field-grid input[type="file"],
+.field-grid input[type="number"] {
+  padding: 15px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  background: #f2f2f2;
+  font-size: 16px;
+  outline: none;
+}
+
+.field-grid input:focus {
+  border-color: #6a5acd;
+  background: #fff;
+}
+
+.upload-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  background: #f2f2f2;
+  font-size: 16px;
+  cursor: pointer;
+  color: #666;
+}
+
+.upload-box:hover {
+  border-color: #6a5acd;
+  background: #fff;
+}
+
+.upload-box i {
+  font-size: 16px;
+  color: #666;
+}
+
+
+/* Submit button */
+.submit-btn {
+  width: 160px;
+  height: 50px;
+  background: #4e4c86;
+  color: white;
+  font-size: 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+  display: block;
+  margin: 0 auto;
+}
+
+.submit-btn:hover {
+  background: #8778a4;
+}
+
+/* === Base Styles (Desktop First) === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f7fb;
+}
+
+/* Layout */
+.wrapper {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+/* Left Image */
+.left-panel {
+  flex: 1;
+  background: url("../Images/dog_and_cat 1.svg") no-repeat center center/cover;
+}
+
+/* Right Form */
+.right-panel {
+  flex: 1;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+.brand-logo img {
+  width: 250px;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 35px;
+  margin-bottom: 5px;
+  font-family: "Playfair Display", serif;
+}
+
+.subtitle {
+  font-size: 20px;
+  margin-bottom: 30px;
+  color: #333;
+  font-style: italic;
+}
+
+/* Radio group */
+.choice-group {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 25px;
+}
+
+.choice-group label {
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.choice-group input[type="radio"] {
+  transform: scale(1.2);
+  margin-right: 6px;
+  accent-color: #96b04d;
+}
+
+/* Form grid */
+.field-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 30px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.field-grid input[type="text"],
+.field-grid input[type="file"],
+.field-grid input[type="number"] {
+  padding: 15px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  background: #f2f2f2;
+  font-size: 16px;
+  outline: none;
+  width: 100%;
+}
+
+.field-grid input:focus {
+  border-color: #6a5acd;
+  background: #fff;
+}
+
+.upload-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  background: #f2f2f2;
+  font-size: 16px;
+  cursor: pointer;
+  color: #666;
+  width: 100%;
+}
+
+.upload-box:hover {
+  border-color: #6a5acd;
+  background: #fff;
+}
+
+.upload-box i {
+  font-size: 16px;
+  color: #666;
+}
+
+/* Submit button */
+.submit-btn {
+  width: 160px;
+  height: 50px;
+  background: #4e4c86;
+  color: white;
+  font-size: 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+  display: block;
+  margin: 0 auto;
+}
+
+.submit-btn:hover {
+  background: #8778a4;
+}
+
+/* === RESPONSIVENESS === */
+
+/* Tablets (≤ 1024px) */
+@media (max-width: 1024px) {
+  .title {
+    font-size: 28px;
+  }
+  .subtitle {
+    font-size: 18px;
+  }
+  .brand-logo img {
+    width: 200px;
+  }
+  .field-grid {
+    max-width: 450px;
+    gap: 15px;
+  }
+}
+
+/* Small tablets & large phones (≤ 768px) */
+@media (max-width: 768px) {
+  .wrapper {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .left-panel {
+    height: 200px;
+    flex: none;
+    background-position: top center;
+  }
+
+  .right-panel {
+    flex: none;
+    padding: 30px 20px;
+    width: 100%;
+  }
+
+  .field-grid {
+    grid-template-columns: 1fr; /* stack inputs */
+    max-width: 100%;
+  }
+
+  .title {
+    font-size: 26px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+  }
+}
+
+/* Phones (≤ 480px) */
+@media (max-width: 480px) {
+  .brand-logo img {
+    width: 150px;
+  }
+
+  .title {
+    font-size: 22px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+  }
+
+  .submit-btn {
+    width: 100%;
+    font-size: 18px;
+  }
+
+  .field-grid input,
+  .upload-box {
+    font-size: 14px;
+    padding: 12px;
+  }
+}
