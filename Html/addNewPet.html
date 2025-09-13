@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Styles/addNewPet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Great+Vibes&family=IM+Fell+Great+Primer+SC&family=Lobster&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <title>Add New Pet</title>
+</head>
+<body>
+    
+<div class="wrapper">
+  <!-- Left Section (Image) -->
+  <div class="left-panel"></div>
+
+  <!-- Right Section (Form) -->
+  <div class="right-panel">
+    <div class="brand-logo">
+      <img src="../Images/Logo.svg" alt="FurEver Care Logo" />
+    </div>
+
+    <h1 class="title">Welcome to FurEver Care</h1>
+    <p class="subtitle"><em style="font-family: Playfair Display, serif;">...they deserve forever love</em></p>
+    
+    <form id="petForm"  action="dashboard.html" method="get">
+      <p style="margin-bottom: 10px; font-family: Playfair Display, serif;">Add new Pet</p>
+      
+      <div class="choice-group">
+        <label><input type="radio" name="pet" value="Cat"> Cat</label>
+        <label><input type="radio" name="pet" value="Dog"> Dog</label>
+      </div>
+
+      <div class="field-grid">        
+        <input type="text" placeholder="Pet Name" required pattern="[A-Za-z\s]+" title="Letters only">
+
+        <!-- Age with dropdown -->
+        <div class="age-field">
+          <input type="number" placeholder="Pet Age" required min="0" max="600" title="Enter age">
+          <select required>
+            <option value="months">Months</option>
+            <option value="years">Years</option>
+          </select>
+        </div>
+
+        <input type="text" placeholder="Species" required pattern="[A-Za-z\s]+" title="Letters only">
+        <input type="text" placeholder="Breed" required pattern="[A-Za-z\s]+" title="Letters only">
+        <input type="text" placeholder="Allergies (if any)" pattern="[A-Za-z\s]+" title="Letters only">
+        
+        <label class="upload-box">
+          <span class="file-text">Upload Image</span>
+          <i class="fa-solid fa-chevron-down"></i>
+          <input type="file" accept="image/*" hidden onchange="showFileName(this)">
+        </label>
+      </div>
+
+      <button type="submit" class="submit-btn">Add</button>
+    </form>
+  </div>
+</div>
+<script src="../JS/Script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Styles/vet.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Veterinarian Page</title>
+</head>
+<body>
+   <div class="page-wrapper">
+  <!-- Left Section (Image) -->
+  <div class="form-left-panel"></div>
+
+  <!-- Right Section (Form) -->
+  <div class="form-right-panel">
+    <div class="form-logo">
+      <img src="../Images/Logo.svg" alt="FurEver Care Logo" />
+    </div>
+    <h1 class="form-title">Welcome to FurEver Care</h1>
+    <p class="form-tagline"><em style="font-family: Playfair Display, serif;">...they deserve forever love</em></p>
+    <form>
+      <p class="form-instruction">Please fill in Vet details</p>
+      <div class="form-fields-grid">
+        <input type="text" placeholder="Name" required pattern="[A-Za-z\s]+" title="Letters only">
+        <input type="text" placeholder="Specialization / Niche" required pattern="[A-Za-z\s]+" title="Letters only">
+        <input type="tel" placeholder="Phone Number" required pattern="[0-9\s+]+" title="Numbers only">
+        <label class="form-upload-box">
+          <span class="form-upload-text">Upload Image</span>
+          <i class="fa-solid fa-chevron-down"></i>
+          <input type="file" accept="image/*" hidden>
+        </label>
+        <input type="email" placeholder="Email" required>
+      </div>
+      <button type="submit" class="form-submit-btn">Add</button>
+    </form>
+  </div>
+</div>
+</body>
+</html>

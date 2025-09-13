@@ -1,0 +1,205 @@
+@font-face{
+    font-family: "Playfair Display";
+    src: url(../Fonts/PlayfairDisplay-VariableFont_wght.ttf);
+}
+
+*{
+    font-family: "Playfair Display", "Georgia";
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgba(245, 247, 251, 1);
+}
+.nav_bar{
+    background-color: rgba(78, 76, 134, 1);
+    width: 13vw;
+    height: 100vh;
+    padding-left: 2.1vw;
+    padding-right: 2vw;
+    padding-top: 7vh;
+    position: fixed;
+}
+.nav_bar img{
+    width: 3.45vw;
+}
+.nav_bar .overview{
+    margin-top: 5.1vh;
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+.heading{
+    font-size: 0.9vw;
+    color: white;
+    opacity: 50%;
+}
+.nav_bar .overview .overview_list{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+    font-size: 1.03vw;
+}
+.nav_bar .overview .overview_list span{
+    display: flex;
+    flex-direction: row;
+    gap: 0.3vw;
+    align-items: center;
+}
+.nav_bar .overview .overview_list span img{
+    width: 1.1vw;
+}
+.nav_bar .overview .overview_list span #arrow{
+    width: 1.3vw;
+}
+.case_studies{
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    margin-top: 5vh;
+}
+.case_studies .case_studies_list{
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+}
+.case_studies .case_studies_list img{
+    width: 2.8vw;
+}
+.case_studies .case_studies_list .pet_mini_profile{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5vw;
+    align-items: center;
+}
+.case_studies .case_studies_list .pet_mini_profile .name_and_species{
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+.case_studies .case_studies_list .pet_mini_profile .name_and_species .name{
+    font-size: 1.03vw;
+}
+.case_studies .case_studies_list .pet_mini_profile .name_and_species .species{
+    font-size: 0.95vw;
+    opacity: 50%;
+}
+.nav_bar #log_out{
+    color: white;
+    font-size: 1.03vw;
+    display: flex;
+    flex-direction: row;
+    gap: 0.3vw;
+    align-items: center;
+    margin-top: 9vh;
+}
+.nav_bar #log_out img{
+    width: 1.3vw;
+}
+
+.scrolling_ticker{
+    color: white;
+    background-color: rgba(135, 120, 164, 1);
+    text-align: center;
+    font-size: 1.03vw;
+    padding-top: 0.7vh;
+    padding-bottom: 0.7vh;
+}
+
+.salute_and_side_profile{
+    margin-left: 21vw;
+    margin-top: 1vh;
+    display: flex;
+    flex-direction: row;
+    gap: 42.83vw;
+    padding-right: 2.1vw;
+}
+.salute{
+    margin-left: 21vw;
+    margin-top: 1vh;
+    font-size: 2.8vw;
+}
+.salute #doctors_name{
+    color: rgba(150, 176, 77, 1);
+}
+.side_profile{
+    position: fixed;
+    margin-left: 80vw;
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    align-items: flex-end;
+    width: fit-content;
+}
+.side_profile .mini_profile{
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+    align-items: center;
+}
+.side_profile .mini_profile .name_and_photo{
+    display: flex;
+    flex-direction: row;
+    gap: 0.8vw;
+    align-items: center;
+}
+.side_profile .mini_profile #settings{
+    width: 2.5vw;
+}
+.side_profile .mini_profile #line{
+    width: 0.07vw;
+}
+.side_profile .mini_profile .name_and_photo #photo{
+    width: 3.1vw;
+}
+.vet_profile{
+    background-color: white;
+    padding: 2.5vh 3vw;
+}
+.vet_profile #profile_heading{
+    font-size: 2vw;
+    font-weight: 500;
+}
+.vet_profile .name_and_profile_picture{
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    align-items: center;
+    margin-top: 2.5vh;
+}
+.vet_profile .name_and_profile_picture img{
+    width: 11vw;
+}
+.vet_profile .name_and_profile_picture span{
+    font-size: 1.7vw;
+    color: rgba(78, 76, 134, 1);
+    font-weight: 500;
+}
+.vet_profile .profile_info{
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+    margin-top: 4vh;
+}
+.dark_heading{
+    font-size: 0.9vw;
+    color: black;
+    opacity: 50%;
+}
+.vet_profile .profile_info .info{
+    display: flex;
+    flex-direction: row;
+    gap: 0.7vw;
+}
+.vet_profile .profile_info .info .info_text{
+    font-size: 1.03vw;
+}
+.vet_profile a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5vw;
+    outline: none;
+    align-items: center;
+    background-color: rgba(78, 76, 134, 1);
+}
