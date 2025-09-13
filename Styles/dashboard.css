@@ -4,10 +4,11 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Ubuntu', 'sans-serif';
+    font-family: "Playfair Display", serif;
 }
 :root {
-    --blue: #287bff;
+    /* --blue: #287bff; */
+    --blue: rgba(135,120,164,1);
     --white: #fff;
     --grey: #f5f5f5;
     --black1: #222;
@@ -16,6 +17,7 @@
 body {
     min-height: 100vh;
     overflow-x: hidden;
+    background: rgba(245,247,251,1);
 }
 .container {
     position: relative;
@@ -354,7 +356,7 @@ body {
     font-size: 14px;
     font-weight: 500;
 }
-.recentCustomers {
+/* .recentCustomers {
     position: relative;
     display: grid;
     min-height: 500px;
@@ -369,4 +371,433 @@ body {
     width: 40px;
     border-radius: 50%;
     overflow: hidden;
-}
+} */
+
+
+ .pet-card {
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+      width: 280px;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .pet-card h2 {
+      font-size: 1.2rem;
+      margin-bottom: 15px;
+      font-weight: bold;
+    }
+
+    .pet-image {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+
+    .pet-name {
+      font-size: 1.3rem;
+      color: var(--blue);
+      font-weight: bold;
+      margin: 8px 0;
+    }
+
+    .pet-info {
+      text-align: left;
+      margin: 15px 0;
+      font-size: 0.9rem;
+    }
+
+    .pet-info p {
+      margin: 6px 0;
+    }
+
+    .pet-info span {
+      font-weight: bold;
+      color: var(--blue);
+      text-transform: uppercase;
+      font-size: 0.8rem;
+    }
+
+    .edit-btn {
+      background: var(--blue);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      padding: 10px 20px;
+      font-size: 0.9rem;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .edit-btn:hover {
+      background: var(--blue);
+    }
+
+
+
+      .dog{
+      margin-top: 40px;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    .section-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0px 4px 12px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 15px;
+    }
+
+    .card-content h3 {
+      color: #76a85d; 
+      font-size: 1rem;
+      margin-bottom: 8px;
+    }
+
+    .card-content p {
+      font-size: 0.9rem;
+      margin: 5px 0;
+    }
+
+    .card-content a {
+      font-size: 0.85rem;
+      color: var(--blue); 
+      text-decoration: none;
+    }
+
+    .card-content a:hover {
+      text-decoration: underline;
+    }
+
+
+
+     .prod {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .grid2 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .card2 {
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card2 img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card-content2 {
+      padding: 18px;
+    }
+
+    .card-content2 h2 {
+      font-size: 1.1rem;
+      color: #4b8c3f;
+      margin: 0 0 8px;
+    }
+
+    .card-content2 p {
+      font-size: 0.95rem;
+      color: #444;
+      margin: 0 0 12px;
+    }
+
+    .card-content2 a {
+      font-size: 0.9rem;
+      color: var(--blue);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .card-content2 a:hover {
+      text-decoration: underline;
+    }
+
+
+
+    .tips-section {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 0 20px;
+  }
+
+  .tips-section h1 {
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+    color: #222;
+  }
+
+  .tips-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .tip-card {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  }
+
+  .tip-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+
+  .tip-content {
+    padding: 20px;
+  }
+
+  .tip-content h2 {
+    font-size: 1.2rem;
+    margin: 0 0 8px;
+    color: #4b8c3f;
+  }
+
+  .tip-content p {
+    font-size: 0.95rem;
+    color: #333;
+    margin: 0 0 12px;
+    font-weight: 500;
+  }
+
+  .tip-content a {
+    font-size: 0.9rem;
+    color: var(--blue); 
+    text-decoration: none;
+  }
+
+  .tip-content a:hover {
+    text-decoration: underline;
+  }
+
+
+ .Help {
+    margin: 40px auto;
+    max-width: 600px;
+  }
+
+  .Help h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #222;
+  }
+
+  .vet-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    background-color: #333;
+    color: #fff;
+  }
+
+  .vet-table thead {
+    background-color: #444;
+    text-align: center;
+  }
+
+  .vet-table thead th {
+    padding: 12px;
+    font-size: 16px;
+  }
+
+  .vet-table tbody td {
+    padding: 12px;
+    border-top: 1px solid #555;
+    font-size: 14px;
+  }
+
+  .vet-table tbody tr:hover {
+    background-color: #555;
+  }
+
+  .vet-table td:first-child {
+    font-weight: 600;
+  }
+
+  .vet-table td:last-child {
+    font-weight: bold;
+    color: #f1f1f1;
+  }
+
+
+
+  .feedback-section {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 0 20px;
+  }
+
+  .feedback-section h1 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #222;
+  }
+
+  .feedback-card {
+    background: #fff;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+
+  .feedback-card form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .feedback-card input,
+  .feedback-card textarea {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background: #f1f1f1;
+    font-size: 1rem;
+    outline: none;
+    resize: none;
+  }
+
+  .feedback-card input:focus,
+  .feedback-card textarea:focus {
+    background: #e9e9e9;
+  }
+
+  .feedback-card button {
+    align-self: center;
+    background:  var(--blue); 
+    color: #fff;
+    border: none;
+    padding: 12px 40px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+
+  .feedback-card button:hover {
+    background: #3b366b;
+  }
+
+
+  .containerCircle {
+      justify-self: center;
+      display: flex;
+      gap: 40px;
+    }
+
+    .circle {
+      width: 300px;
+      height: 300px;
+      background: white;
+      border-radius: 50%;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 30px;
+      text-align: center;
+    }
+
+    .circle h2 {
+      color: #6e8b3d; 
+      margin-bottom: 15px;
+    }
+
+    .circle p {
+      font-size: 14px;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    .contact-options {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      align-items: flex-start;
+    }
+
+    .contact-options div {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 14px;
+      color: #333;
+      cursor: pointer;
+    }
+
+    .contact-options div:hover {
+      color: #6e8b3d;
+    }
+
+    .contact-options i {
+      font-size: 18px;
+      color: #4a4a8d;
+    }
+
+     footer {
+    background-color: var(--white); 
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+    color: #555;
+    border-top: 1px solid #ccc; /* thin line */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }

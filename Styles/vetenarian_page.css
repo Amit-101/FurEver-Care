@@ -128,7 +128,8 @@ body{
     margin-left: 80vw;
     display: flex;
     flex-direction: column;
-    gap: 5vh;
+    gap: 4vh;
+    margin-top: -5vh;
     align-items: flex-end;
     width: fit-content;
 }
@@ -156,6 +157,8 @@ body{
 .vet_profile{
     background-color: white;
     padding: 2.5vh 3vw;
+    border-radius: 20px;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.507);
 }
 .vet_profile #profile_heading{
     font-size: 2vw;
@@ -200,7 +203,10 @@ body{
     color: white;
     font-size: 1.5vw;
     outline: none;
-    align-items: center;
+    margin-top: 5vh;
+    align-self: center;
+    padding: 1vh 3vw;
+    border-radius: 10px;
     background-color: rgba(78, 76, 134, 1);
 }
 
