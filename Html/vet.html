@@ -19,7 +19,7 @@
     </div>
     <h1 class="form-title">Welcome to FurEver Care</h1>
     <p class="form-tagline"><em style="font-family: Playfair Display, serif;">...they deserve forever love</em></p>
-    <form>
+    <form id="vetForm">
       <p class="form-instruction">Please fill in Vet details</p>
       <div class="form-fields-grid">
         <input type="text" placeholder="Name" required pattern="[A-Za-z\s]+" title="Letters only">
@@ -36,5 +36,18 @@
     </form>
   </div>
 </div>
+<script>
+   document.getElementById("vetForm").addEventListener("submit", function(e) {
+    e.preventDefault(); // Stop default form submission
+    
+    if (this.checkValidity()) {
+      // ✅ If form is valid, go to another page
+      window.location.href = "vetenarian_page.html";
+    } else {
+      // ❌ If form is invalid, show browser’s validation
+      this.reportValidity();
+    }
+     });
+</script>
 </body>
 </html>

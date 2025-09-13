@@ -1,3 +1,4 @@
+//Index
 document.getElementById("userForm").addEventListener("submit", function(event) {
       event.preventDefault(); 
       
@@ -31,4 +32,17 @@ document.getElementById("userForm").addEventListener("submit", function(event) {
     }
   });
 
-  //This navigates you to the vet page
+  //This navigates you to the veterenarian page
+
+    document.getElementById("vetForm").addEventListener("submit", function(e) {
+    e.preventDefault(); // Stop default form submission
+    
+    if (this.checkValidity()) {
+      // ✅ If form is valid, go to another page
+      console.log("passed")
+      window.location.href = "vetenarian_page.html";
+    } else {
+      // ❌ If form is invalid, show browser’s validation
+      this.reportValidity();
+    }
+  });
