@@ -15,7 +15,7 @@ document.getElementById("userForm").addEventListener("submit", function(event) {
       } else if (selected.value === "Veterinarian") {
         window.location.href = "vet.html"; 
       } else if (selected.value === "Shelter") {
-        window.location.href = "shelter.html"; 
+        window.location.href = "../TECHWIZ/Animal_Shelter.html"; 
       }
     });
 
