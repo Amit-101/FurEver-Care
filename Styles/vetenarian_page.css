@@ -123,26 +123,83 @@ body{
 .salute #doctors_name{
     color: rgba(150, 176, 77, 1);
 }
-.salute_and_side_profile .mini_profile{
+.side_profile{
+    position: fixed;
+    margin-left: 80vw;
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    align-items: flex-end;
+    width: fit-content;
+}
+.side_profile .mini_profile{
     display: flex;
     flex-direction: row;
     gap: 1vw;
     align-items: center;
-    /* margin-top: 2.5vh;
-    margin-top: 1vh; */
 }
-.salute_and_side_profile .mini_profile .name_and_photo{
+.side_profile .mini_profile .name_and_photo{
     display: flex;
     flex-direction: row;
     gap: 0.8vw;
     align-items: center;
 }
-.salute_and_side_profile .mini_profile #settings{
+.side_profile .mini_profile #settings{
     width: 2.5vw;
 }
-.salute_and_side_profile .mini_profile #line{
+.side_profile .mini_profile #line{
     width: 0.07vw;
 }
-.salute_and_side_profile .mini_profile .name_and_photo #photo{
+.side_profile .mini_profile .name_and_photo #photo{
     width: 3.1vw;
+}
+.vet_profile{
+    background-color: white;
+    padding: 2.5vh 3vw;
+}
+.vet_profile #profile_heading{
+    font-size: 2vw;
+    font-weight: 500;
+}
+.vet_profile .name_and_profile_picture{
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    align-items: center;
+    margin-top: 2.5vh;
+}
+.vet_profile .name_and_profile_picture img{
+    width: 11vw;
+}
+.vet_profile .name_and_profile_picture span{
+    font-size: 1.7vw;
+    color: rgba(78, 76, 134, 1);
+    font-weight: 500;
+}
+.vet_profile .profile_info{
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+    margin-top: 4vh;
+}
+.dark_heading{
+    font-size: 0.9vw;
+    color: black;
+    opacity: 50%;
+}
+.vet_profile .profile_info .info{
+    display: flex;
+    flex-direction: row;
+    gap: 0.7vw;
+}
+.vet_profile .profile_info .info .info_text{
+    font-size: 1.03vw;
+}
+.vet_profile a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5vw;
+    outline: none;
+    align-items: center;
+    background-color: rgba(78, 76, 134, 1);
 }
